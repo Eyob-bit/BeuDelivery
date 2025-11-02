@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Restaurant - beU Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">beU Delivery</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="register.html">Register</a>
+      <a href="order.html">Order</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="form-page">
+    <a href="delivery.html"><h2>Delivery</h2></a>
+    <h2>Register Your Restaurant</h2>
+    <form class="form-box">
+      <label>Restaurant Name</label>
+      <input type="text" placeholder="Enter restaurant name" required>
+
+      <label>Location</label>
+      <input type="text" placeholder="Enter restaurant address" required>
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="09XXXXXXXX" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="example@gmail.com" required>
+
+      <label>Restaurant Type</label>
+      <select required>
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+        <option>Fast Food</option>
+        <option>Bakery</option>
+      </select>
+
+      <label>Upload Restaurant Image</label>
+      <input type="file" accept="image/*">
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 beU Delivery Clone | Built by Eyob</p>
+  </footer>
+</body>
+</html>

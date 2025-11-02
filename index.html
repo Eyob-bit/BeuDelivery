@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beU Delivery Clone - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">beU Delivery</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for food or restaurants..." />
+      <button>Search</button>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="register.html">Register</a>
+      <a href="order.html">Order</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main layout -->
+  <main class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <input type="radio" name="cat" id="all" checked>
+      <label for="all">All Foods</label>
+
+      <input type="radio" name="cat" id="breakfast">
+      <label for="breakfast">Breakfast</label>
+
+      <input type="radio" name="cat" id="lunch">
+      <label for="lunch">Lunch</label>
+
+      <input type="radio" name="cat" id="dinner">
+      <label for="dinner">Dinner</label>
+
+      <input type="radio" name="cat" id="burgerpizza">
+      <label for="burgerpizza">Burger & Pizza</label>
+
+      <input type="radio" name="cat" id="fastfood">
+      <label for="fastfood">Fast Food</label>
+    </aside>
+
+    <!-- Food Grid -->
+    <section class="foods">
+      <h2>Our Delicious Foods</h2>
+
+      <!-- All / Breakfast -->
+      <div class="food breakfast">
+        <img src="images/pancake.jpg" alt="Pancakes">
+        <h3>Pancakes</h3>
+        <p class="restaurant">From Kaldi’s Coffee</p>
+        <p class="price">100 ETB</p>
+        <div class="desc">Fluffy pancakes with honey and butter, served hot every morning.</div>
+      </div>
+
+      <div class="food breakfast">
+        <img src="images/omelette.jpg" alt="Omelette">
+        <h3>Cheese Omelette</h3>
+        <p class="restaurant">From Cupcake Café</p>
+        <p class="price">90 ETB</p>
+        <div class="desc">Soft omelette stuffed with cheese, tomato, and green pepper.</div>
+      </div>
+
+      <!-- Lunch -->
+      <div class="food lunch">
+        <img src="images/tibs.jpg" alt="Beef Tibs">
+        <h3>Beef Tibs</h3>
+        <p class="restaurant">From Yod Abyssinia Restaurant</p>
+        <p class="price">200 ETB</p>
+        <div class="desc">Traditional Ethiopian sautéed beef with onions and spices.</div>
+      </div>
+
+      <div class="food lunch">
+        <img src="images/pasta.jpg" alt="Pasta">
+        <h3>Chicken Alfredo Pasta</h3>
+        <p class="restaurant">From Mama’s Kitchen</p>
+        <p class="price">180 ETB</p>
+        <div class="desc">Creamy pasta with grilled chicken, mushrooms, and parmesan.</div>
+      </div>
+
+      <!-- Dinner -->
+      <div class="food dinner">
+        <img src="images/roastedchicken.jpg" alt="Roasted Chicken">
+        <h3>Roasted Chicken</h3>
+        <p class="restaurant">From Habesha 2000</p>
+        <p class="price">220 ETB</p>
+        <div class="desc">Herb-marinated roasted chicken with salad and sauce.</div>
+      </div>
+
+      <div class="food dinner">
+        <img src="images/shiro.jpg" alt="Shiro Wot">
+        <h3>Shiro Wot</h3>
+        <p class="restaurant">From Kategna Restaurant</p>
+        <p class="price">130 ETB</p>
+        <div class="desc">Classic Ethiopian chickpea stew with garlic and onions.</div>
+      </div>
+
+      <!-- Burger & Pizza -->
+      <div class="food burgerpizza">
+        <img src="images/burger.jpg" alt="Burger">
+        <h3>Classic Cheese Burger</h3>
+        <p class="restaurant">From Roadhouse Grill</p>
+        <p class="price">150 ETB</p>
+        <div class="desc">Juicy beef patty, cheddar cheese, lettuce, and house sauce.</div>
+      </div>
+
+      <div class="food burgerpizza">
+        <img src="images/pizza.jpg" alt="Pizza">
+        <h3>Pepperoni Pizza</h3>
+        <p class="restaurant">From Doka Pizza</p>
+        <p class="price">250 ETB</p>
+        <div class="desc">Thin-crust pizza with pepperoni, mozzarella, and tomato sauce.</div>
+      </div>
+
+      <!-- Fast Food -->
+      <div class="food fastfood">
+        <img src="images/fries.jpg" alt="Fries">
+        <h3>French Fries</h3>
+        <p class="restaurant">From Chicken King</p>
+        <p class="price">70 ETB</p>
+        <div class="desc">Golden crispy fries with ketchup or mayo dip.</div>
+      </div>
+
+      <div class="food fastfood">
+        <img src="images/hotdog.jpg" alt="Hot Dog">
+        <h3>Hot Dog</h3>
+        <p class="restaurant">From Snack Hub</p>
+        <p class="price">110 ETB</p>
+        <div class="desc">Grilled sausage in a bun topped with mustard and onions.</div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 beU Delivery Clone | Built by Eyob</p>
+  </footer>
+</body>
+</html>

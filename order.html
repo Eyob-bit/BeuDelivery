@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Food - beU Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">beU Delivery</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="register.html">Register</a>
+      <a href="order.html">Order</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="order-page">
+    <div class="menu-section">
+      <h2>Choose Your Favorite Meals</h2>
+
+      <!-- Each food item -->
+      <div class="order-card">
+        <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+        <div class="order-details">
+          <h3>Pepperoni Pizza</h3>
+          <p><strong>Restaurant:</strong> Doka Pizza</p>
+          <p><strong>Description:</strong> Authentic Italian-style pizza topped with spicy pepperoni and mozzarella cheese.</p>
+          <p><strong>Price:</strong> 250 ETB</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order-card">
+        <img src="images/tibs.jpg" alt="Beef Tibs">
+        <div class="order-details">
+          <h3>Beef Tibs</h3>
+          <p><strong>Restaurant:</strong> Yod Abyssinia</p>
+          <p><strong>Description:</strong> Traditional sautéed beef with onions and Ethiopian spices, served with injera.</p>
+          <p><strong>Price:</strong> 200 ETB</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order-card">
+        <img src="images/burger.jpg" alt="Cheese Burger">
+        <div class="order-details">
+          <h3>Cheese Burger</h3>
+          <p><strong>Restaurant:</strong> Kaldi’s Coffee</p>
+          <p><strong>Description:</strong> Juicy beef patty, melted cheese, lettuce, tomato, and special sauce.</p>
+          <p><strong>Price:</strong> 120 ETB</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Summary -->
+    <aside class="cart-section">
+      <h3>Your Cart</h3>
+      <div class="cart-items">
+        <p>No items yet.</p>
+      </div>
+
+      <div class="cart-total">
+        <p><strong>Total:</strong> 0 ETB</p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 beU Delivery Clone | Built by Eyob</p>
+  </footer>
+</body>
+</html>
