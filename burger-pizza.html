@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>beU Delivery Clone - Home</title>
+  <link rel="stylesheet" href="style.css" />
+    <style>
+     .burger-button{
+       border-style: outset;
+       border-color: #ff6600;
+  
+       }
+     .burger-h3{
+       color: #e25b00;
+       }
+            .home{
+        text-decoration: underline;
+        font-weight: bold;
+       }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">beU Delivery</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for food or restaurants..." />
+      <button>Search</button>
+    </div>
+    <nav>
+      <a class="home" href="index.html" class="active">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="register.html">Register</a>
+      <a href="order.html">Order</a>
+      <a href="login.html">Login</a>
+      <a href="login.html">Admin</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main layout -->
+  <main class="layout">
+    <!-- Sidebar -->
+<div class="sidebar">
+      <h2>Categories</h2>
+      
+      <a href="index.html"><button><h3>All Foods</h3></button></a>
+      
+      <a href="breakfast.html"><button class="breakfast-button"><h3 class="breakfast-h3">Breakfast</h3></button></a>
+
+      <a href="lunch.html"><button><h3>Lunch</h3></button></a>
+
+      <a href="dinner.html"><button><h3>Dinner</h3></button></a>
+
+      <a href="burger-pizza.html"><button class="burger-button"><h3 class="burger-h3">Burger & Pizza</h3></button></a>
+
+      <a href="fast-food.html"><button><h3>Fast Food</h3></button></a>
+    </div>
+
+    <!-- Food Grid -->
+    <section class="foods">
+      <h2>Our Delicious Foods</h2>
+
+      <!-- Burger & Pizza -->
+      <div class="food burgerpizza">
+        <img src="images/burger.webp" alt="Burger">
+        <h3>Classic Cheese Burger</h3>
+        <p class="restaurant">From Roadhouse Grill</p>
+        <p class="price">150 ETB</p>
+        <div class="desc">Juicy beef patty, cheddar cheese, lettuce, and house sauce.</div>
+      </div>
+
+      <div class="food burgerpizza">
+        <img src="images/pizza.jpg" alt="Pizza">
+        <h3>Pepperoni Pizza</h3>
+        <p class="restaurant">From Doka Pizza</p>
+        <p class="price">250 ETB</p>
+        <div class="desc">Thin-crust pizza with pepperoni, mozzarella, and tomato sauce.</div>
+      </div>
+      <div class="food pizza-burger">
+    <img src="images/pizza.jpg" alt="Pizza Margherita">
+    <h3>Pizza Margherita</h3>
+    <p class="restaurant">From Debonairs Pizza</p>
+    <p class="price">250 ETB</p>
+    <div class="order-button"><button><p>Order Now</p></button></div>
+    <div class="desc">Classic Italian pizza with mozzarella, tomato sauce, and fresh basil.</div>
+  </div>
+
+  <div class="food pizza-burger">
+    <img src="images/burger.jpg" alt="Beef Burger">
+    <h3>Beef Burger</h3>
+    <p class="restaurant">From Savor Grill</p>
+    <p class="price">150 ETB</p>
+    <div class="order-button"><button><p>Order Now</p></button></div>
+    <div class="desc">Juicy beef patty with cheese, lettuce, tomato, and signature sauce.</div>
+  </div>
+
+  <div class="food pizza-burger">
+    <img src="images/chicken_pizza.jpg" alt="Chicken Pizza">
+    <h3>Chicken Pizza</h3>
+    <p class="restaurant">From Pizza Hut</p>
+    <p class="price">260 ETB</p>
+    <div class="order-button"><button><p>Order Now</p></button></div>
+    <div class="desc">Grilled chicken pizza with mushrooms, cheese, and spicy sauce.</div>
+  </div>
+
+  <div class="food pizza-burger">
+    <img src="images/cheese_burger.jpg" alt="Cheese Burger">
+    <h3>Cheese Burger</h3>
+    <p class="restaurant">From Burger King</p>
+    <p class="price">160 ETB</p>
+    <div class="order-button"><button><p>Order Now</p></button></div>
+    <div class="desc">Melted cheese on a beef patty with special burger sauce.</div>
+  </div>
+
+  <div class="food pizza-burger">
+    <img src="images/veggie_pizza.jpg" alt="Veggie Pizza">
+    <h3>Veggie Pizza</h3>
+    <p class="restaurant">From Italiano Kitchen</p>
+    <p class="price">240 ETB</p>
+    <div class="order-button"><button><p>Order Now</p></button></div>
+    <div class="desc">Loaded with fresh vegetables, olives, and mozzarella cheese.</div>
+  </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 beU Delivery</p>
+  </footer>
+</body>
+</html>

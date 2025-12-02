@@ -55,6 +55,10 @@ nav a {
   text-decoration: none;
   margin-left: 15px;
   font-weight: 500;
+  
+}
+nav a:hover{
+  text-shadow: 3px 4px 8px black;
 }
 
 /* Layout */
@@ -66,37 +70,39 @@ nav a {
 
 /* Sidebar */
 .sidebar {
-  width: 220px;
+  width: 260px;
   background: white;
-  padding: 20px;
+  padding: 19px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   height: fit-content;
 }
 
-.sidebar h3 {
+.sidebar h2 {
   margin-bottom: 15px;
   color: #ff6600;
 }
-
-.sidebar input {
-  display: none;
+.sidebar a{
+  text-decoration: none;
 }
-
-.sidebar label {
+.sidebar button {
   display: block;
-  padding: 10px 12px;
-  background: #f4f4f4;
-  border-radius: 5px;
-  margin-bottom: 6px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
+  margin: 10px;
+  width: 200px;
+  height: 32px;
 
-.sidebar label:hover {
-  background: #ffe0c2;
 }
-
+.sidebar button:hover{
+  border-style: outset;
+  border-color: #ff6600;
+  
+}
+.sidebar h3:hover{
+  color: #e25b00;
+}
+.sidebar h3{
+  color: gray;
+}
 /* Food Grid */
 .foods {
   flex: 1;
@@ -132,7 +138,20 @@ nav a {
 .food h3 {
   margin: 10px 15px 0;
 }
-
+.order-button button{
+  width: 106px;
+  background: #ff6600;
+  border-style: none;
+}
+.order-button button:hover{
+  cursor: pointer;
+  background: #e25b00;
+  border-style: outset;
+}
+.order-button p {
+  color: white;
+  font-size: 18px;
+}
 .restaurant {
   font-size: 0.9em;
   margin-left: 15px;
@@ -189,12 +208,49 @@ footer {
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-.form-page h2 {
+
+.form-page h2{
+  color: #ff6600;
   text-align: center;
   margin-bottom: 20px;
-  color: #ff6600;
 }
-
+.form-page h3 {
+  text-align: center;
+  font-weight: 100;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  color: white;
+}
+.register-button{
+  display: inline-block;
+  height: 50px;
+  width: 180px;
+  margin-left: 24px;
+  margin-right: 130px;
+  margin-bottom: 10px;
+  background-color: #ff6600;
+  border-style: none;
+  border-radius: 4px;
+  padding-top: 3px;
+}
+.register-button:hover{
+  cursor: pointer;
+  background: #e25b00;
+}
+.delivery-button{
+  display: inline-block;
+  height: 50px;
+  width: 180px;
+  margin-bottom: 10px;
+  background-color: #ff6600;
+  border-style: none;
+  border-radius: 4px;
+  padding-top: 3px;
+}
+.delivery-button:hover{
+  cursor: pointer;
+  background: #e25b00;
+}
 .form-box {
   display: flex;
   flex-direction: column;
@@ -369,4 +425,18 @@ footer {
 .checkout-btn:hover {
   background: #e25b00;
 }
-
+.all-foods{
+  
+  align-items: center;
+  width: 170px;
+}
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }

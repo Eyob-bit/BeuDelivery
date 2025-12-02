@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>beU Delivery Clone - Home</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+     .all-foods-button{
+       border-style: outset;
+       border-color: #ff6600;
+  
+       }
+     .all-foods-h3{
+       color: #e25b00;
+       }
+       .home{
+        text-decoration: underline;
+        font-weight: bold;
+       }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -15,11 +29,12 @@
       <button>Search</button>
     </div>
     <nav>
-      <a href="index.html" class="active">Home</a>
+      <a class="home" href="index.html" class="active">Home</a>
       <a href="restaurants.html">Restaurants</a>
       <a href="register.html">Register</a>
       <a href="order.html">Order</a>
       <a href="login.html">Login</a>
+      <a href="admin.html">Admin</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
@@ -27,26 +42,21 @@
   <!-- Main layout -->
   <main class="layout">
     <!-- Sidebar -->
-    <aside class="sidebar">
-      <h3>Categories</h3>
-      <input type="radio" name="cat" id="all" checked>
-      <label for="all">All Foods</label>
+    <div class="sidebar">
+      <h2>Categories</h2>
+      
+      <a href="index.html"><button class="all-foods-button"><h3 class="all-foods-h3">All Foods</h3></button></a>
+      
+      <a href="breakfast.html"><button><h3>Breakfast</h3></button></a>
 
-      <input type="radio" name="cat" id="breakfast">
-      <label for="breakfast">Breakfast</label>
+      <a href="lunch.html"><button><h3>Lunch</h3></button></a>
 
-      <input type="radio" name="cat" id="lunch">
-      <label for="lunch">Lunch</label>
+      <a href="dinner.html"><button><h3>Dinner</h3></button></a>
 
-      <input type="radio" name="cat" id="dinner">
-      <label for="dinner">Dinner</label>
+      <a href="burger-pizza.html"><button><h3>Burger & Pizza</h3></button></a>
 
-      <input type="radio" name="cat" id="burgerpizza">
-      <label for="burgerpizza">Burger & Pizza</label>
-
-      <input type="radio" name="cat" id="fastfood">
-      <label for="fastfood">Fast Food</label>
-    </aside>
+      <a href="fast-food.html"><button><h3>Fast Food</h3></button></a>
+    </div>
 
     <!-- Food Grid -->
     <section class="foods">
@@ -54,44 +64,59 @@
 
       <!-- All / Breakfast -->
       <div class="food breakfast">
-        <img src="images/pancake.jpg" alt="Pancakes">
+        <img src="images/pancake.avif" alt="Pancakes">
         <h3>Pancakes</h3>
         <p class="restaurant">From Kaldi’s Coffee</p>
         <p class="price">100 ETB</p>
+        <div class="order-button">
+          <button><p>Order Now</p></button>
+        </div>
         <div class="desc">Fluffy pancakes with honey and butter, served hot every morning.</div>
       </div>
 
       <div class="food breakfast">
-        <img src="images/omelette.jpg" alt="Omelette">
+        <img src="images/omelette.jpeg" alt="Omelette">
         <h3>Cheese Omelette</h3>
         <p class="restaurant">From Cupcake Café</p>
         <p class="price">90 ETB</p>
+        <div class="order-button">
+          <button><p>Order Now</p></button>
+        </div>
         <div class="desc">Soft omelette stuffed with cheese, tomato, and green pepper.</div>
       </div>
 
       <!-- Lunch -->
       <div class="food lunch">
-        <img src="images/tibs.jpg" alt="Beef Tibs">
+        <img src="images/tibs.jpeg" alt="Beef Tibs">
         <h3>Beef Tibs</h3>
         <p class="restaurant">From Yod Abyssinia Restaurant</p>
         <p class="price">200 ETB</p>
+        <div class="order-button">
+          <button><p>Order Now</p></button>
+        </div>
         <div class="desc">Traditional Ethiopian sautéed beef with onions and spices.</div>
       </div>
 
       <div class="food lunch">
-        <img src="images/pasta.jpg" alt="Pasta">
+        <img src="images/pasta.jpeg" alt="Pasta">
         <h3>Chicken Alfredo Pasta</h3>
         <p class="restaurant">From Mama’s Kitchen</p>
         <p class="price">180 ETB</p>
+        <div class="order-button">
+          <button><p>Order Now</p></button>
+        </div>
         <div class="desc">Creamy pasta with grilled chicken, mushrooms, and parmesan.</div>
       </div>
 
       <!-- Dinner -->
       <div class="food dinner">
-        <img src="images/roastedchicken.jpg" alt="Roasted Chicken">
+        <img src="images/roastedchicken.jpeg" alt="Roasted Chicken">
         <h3>Roasted Chicken</h3>
         <p class="restaurant">From Habesha 2000</p>
         <p class="price">220 ETB</p>
+        <div class="order-button">
+          <button><p>Order Now</p></button>
+        </div>
         <div class="desc">Herb-marinated roasted chicken with salad and sauce.</div>
       </div>
 
@@ -100,15 +125,21 @@
         <h3>Shiro Wot</h3>
         <p class="restaurant">From Kategna Restaurant</p>
         <p class="price">130 ETB</p>
+        <div class="order-button">
+          <button><p>Order Now</p></button>
+        </div>
         <div class="desc">Classic Ethiopian chickpea stew with garlic and onions.</div>
       </div>
 
       <!-- Burger & Pizza -->
       <div class="food burgerpizza">
-        <img src="images/burger.jpg" alt="Burger">
+        <img src="images/burger.webp" alt="Burger">
         <h3>Classic Cheese Burger</h3>
         <p class="restaurant">From Roadhouse Grill</p>
         <p class="price">150 ETB</p>
+        <div class="order-button">
+          <button><p>Order Now</p></button>
+        </div>
         <div class="desc">Juicy beef patty, cheddar cheese, lettuce, and house sauce.</div>
       </div>
 
@@ -117,6 +148,9 @@
         <h3>Pepperoni Pizza</h3>
         <p class="restaurant">From Doka Pizza</p>
         <p class="price">250 ETB</p>
+        <div class="order-button">
+          <button><p>Order Now</p></button>
+        </div>
         <div class="desc">Thin-crust pizza with pepperoni, mozzarella, and tomato sauce.</div>
       </div>
 
@@ -126,22 +160,195 @@
         <h3>French Fries</h3>
         <p class="restaurant">From Chicken King</p>
         <p class="price">70 ETB</p>
+        <div class="order-button">
+          <button><p>Order Now</p></button>
+        </div>
         <div class="desc">Golden crispy fries with ketchup or mayo dip.</div>
       </div>
 
       <div class="food fastfood">
-        <img src="images/hotdog.jpg" alt="Hot Dog">
+        <img src="images/hotdogs.JPG" alt="Hot Dog">
         <h3>Hot Dog</h3>
         <p class="restaurant">From Snack Hub</p>
         <p class="price">110 ETB</p>
+        <div class="order-button">
+          <a href="order.html"><button><p>Order Now</p></button></a>
+        </div>
         <div class="desc">Grilled sausage in a bun topped with mustard and onions.</div>
       </div>
 
+      <!-- Breakfast -->
+<div class="food breakfast">
+  <img src="images/omelette.jpg" alt="Omelette">
+  <h3>Omelette</h3>
+  <p class="restaurant">From Kaldi’s Coffee</p>
+  <p class="price">90 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Classic egg omelette served with toast and fresh vegetables.</div>
+</div>
+
+<div class="food breakfast">
+  <img src="images/foul.jpg" alt="Foul">
+  <h3>Foul</h3>
+  <p class="restaurant">From Tomoca Café</p>
+  <p class="price">80 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Traditional Ethiopian fava bean dish seasoned with olive oil and spices.</div>
+</div>
+
+<div class="food breakfast">
+  <img src="images/sandwich.jpg" alt="Club Sandwich">
+  <h3>Club Sandwich</h3>
+  <p class="restaurant">From Bilo’s Café</p>
+  <p class="price">120 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Layered sandwich with chicken, lettuce, tomato, and cheese.</div>
+</div>
+
+<div class="food breakfast">
+  <img src="images/pancake.avif" alt="Pancakes">
+  <h3>Pancakes</h3>
+  <p class="restaurant">From Kaldi’s Coffee</p>
+  <p class="price">100 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Fluffy pancakes with honey and butter, served hot every morning.</div>
+</div>
+
+<div class="food breakfast">
+  <img src="images/porridge.jpg" alt="Porridge">
+  <h3>Porridge</h3>
+  <p class="restaurant">From Abyssinia Café</p>
+  <p class="price">60 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Warm and creamy oat porridge with a touch of honey.</div>
+</div>
+
+<!-- Lunch -->
+<div class="food lunch">
+  <img src="images/burger.jpg" alt="Beef Burger">
+  <h3>Beef Burger</h3>
+  <p class="restaurant">From Savor Grill</p>
+  <p class="price">150 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Juicy beef patty with cheese, lettuce, tomato, and signature sauce.</div>
+</div>
+
+<div class="food lunch">
+  <img src="images/pasta.jpg" alt="Spaghetti">
+  <h3>Spaghetti</h3>
+  <p class="restaurant">From Italiano Kitchen</p>
+  <p class="price">160 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Delicious spaghetti with tomato and basil sauce, topped with parmesan.</div>
+</div>
+
+<div class="food lunch">
+  <img src="images/pizza.jpg" alt="Pizza Margherita">
+  <h3>Pizza Margherita</h3>
+  <p class="restaurant">From Debonairs Pizza</p>
+  <p class="price">250 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Classic Italian pizza with mozzarella, tomato sauce, and fresh basil.</div>
+</div>
+
+<div class="food lunch">
+  <img src="images/tibs.jpg" alt="Tibs">
+  <h3>Tibs</h3>
+  <p class="restaurant">From Yod Abyssinia</p>
+  <p class="price">200 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Ethiopian-style sautéed beef cubes with onions and peppers.</div>
+</div>
+
+<div class="food lunch">
+  <img src="images/kitfo.jpg" alt="Kitfo">
+  <h3>Kitfo</h3>
+  <p class="restaurant">From Kategna Restaurant</p>
+  <p class="price">220 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Minced raw beef seasoned with mitmita and butter, served with injera.</div>
+</div>
+
+<!-- Dinner -->
+<div class="food dinner">
+  <img src="images/doro_wot.jpg" alt="Doro Wot">
+  <h3>Doro Wot</h3>
+  <p class="restaurant">From Habesha 2000</p>
+  <p class="price">230 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Spicy Ethiopian chicken stew served with boiled egg and injera.</div>
+</div>
+
+<div class="food dinner">
+  <img src="images/shiro.jpg" alt="Shiro">
+  <h3>Shiro</h3>
+  <p class="restaurant">From Lucy Lounge</p>
+  <p class="price">100 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Rich chickpea stew blended with spices, served with injera.</div>
+</div>
+
+<div class="food dinner">
+  <img src="images/fish_tibs.jpg" alt="Fish Tibs">
+  <h3>Fish Tibs</h3>
+  <p class="restaurant">From Dashen Lounge</p>
+  <p class="price">210 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Fried fish cubes with vegetables and a touch of lemon flavor.</div>
+</div>
+
+<div class="food dinner">
+  <img src="images/rice.jpg" alt="Fried Rice">
+  <h3>Fried Rice</h3>
+  <p class="restaurant">From China Bar</p>
+  <p class="price">180 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Fried rice mixed with vegetables, soy sauce, and scrambled eggs.</div>
+</div>
+
+<div class="food dinner">
+  <img src="images/pasta_meatballs.jpg" alt="Pasta with Meatballs">
+  <h3>Pasta with Meatballs</h3>
+  <p class="restaurant">From Italian Corner</p>
+  <p class="price">190 ETB</p>
+  <div class="order-button">
+    <button><p>Order Now</p></button>
+  </div>
+  <div class="desc">Spaghetti with tomato sauce and homemade meatballs.</div>
+</div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 beU Delivery Clone | Built by Eyob</p>
+  <footer class="footer">
+    <p>© 2025 beU Delivery</p>
   </footer>
 </body>
 </html>
