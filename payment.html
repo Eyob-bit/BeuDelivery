@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo"><a href="index.html" id="logo">beU Delivery</a></div>
+  </header>
+
+    <h2>Choose Payment Method</h2>
+
+    <div class="payment-box">
+
+        <label class="method">
+            <input type="radio" name="payment" value="cbe">
+            Commercial Bank of Ethiopia (CBE)
+        </label>
+
+        <label class="method">
+            <input type="radio" name="payment" value="cbe-birr">
+            CBE Birr
+        </label>
+
+        <label class="method">
+            <input type="radio" name="payment" value="telebirr">
+            Telebirr
+        </label>
+
+
+        <div class="input-group">
+            <label>Phone Number / Wallet ID</label>
+            <input type="text" placeholder="09xxxxxxxx">
+        </div>
+
+        <button class="pay-btn">Confirm Payment</button>
+    </div>
+
+</body>
+</html>
