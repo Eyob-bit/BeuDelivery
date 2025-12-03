@@ -6,12 +6,105 @@
   <title>Register Restaurant - beU Delivery</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .register{
+    .register {
         text-decoration: underline;
         font-weight: bold;
-       }
+    }
+
+    .food-section {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f8f8f8;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .food-section h3 {
+      margin: 0 0 10px;
+      color: #ff6600;
+    }
+
+    .food-section p {
+      margin: 0 0 15px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* ⭐ ADDED STYLES FOR BETTER BUTTON/FORM POSITIONING ⭐ */
+    .button-group {
+      display: flex; /* Makes buttons appear side-by-side */
+      justify-content: center; /* Centers the buttons */
+      gap: 20px; /* Space between buttons */
+      margin-bottom: 30px; /* Space before the main form */
+      width: 100%; /* Ensures it takes full width for centering */
+    }
+
+    .register-button, .delivery-button {
+      flex: 1; /* Allows buttons to share space equally */
+      max-width: 250px; /* Caps button size for cleaner look */
+      text-align: center;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-page {
+      display: flex;
+      flex-direction: column; /* Stacks button group and form vertically */
+      align-items: center; /* Centers all content horizontally */
+      padding: 20px;
+    }
+
+    .form-box {
+      max-width: 600px; /* Gives the form a defined maximum width */
+      width: 100%;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      background: white;
+    }
+
+    /* Make sure form elements take full width inside the box */
+    .form-box input[type="text"], 
+    .form-box input[type="tel"], 
+    .form-box input[type="email"], 
+    .form-box input[type="number"],
+    .form-box select,
+    .form-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    }
+
+    .form-box label {
+      display: block; /* Ensures labels are on their own line */
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .form-box button[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
   </style>
 </head>
+
 <body>
   <header class="navbar">
     <div class="logo">beU Delivery</div>
@@ -27,16 +120,20 @@
   </header>
 
   <main class="form-page">
-    <a href="register.html">
-      <button class="register-button">
-        <h3>Register Your <br>Restaurant</h3>
-      </button>
-    </a>
-    <a href="delivery.html"> 
-      <button class="delivery-button">
-        <h3>Register As <br>Delivery</h3>
-      </button>
-    </a>
+
+    <div class="button-group">
+      <a href="register.html">
+        <button class="register-button">
+          <h3>Register Your <br>Restaurant</h3>
+        </button>
+      </a>
+
+      <a href="delivery.html"> 
+        <button class="delivery-button">
+          <h3>Register As <br>Delivery</h3>
+        </button>
+      </a>
+    </div>
     <form class="form-box">
       <label>Restaurant Name</label>
       <input type="text" placeholder="Enter restaurant name" required>
@@ -62,12 +159,43 @@
       <label>Upload Restaurant Image</label>
       <input type="file" accept="image/*">
 
-      <button type="submit">Submit Registration</button>
+
+      <div class="food-section">
+        <h3>Add Food Item</h3>
+        <p>Enter details about the food your restaurant provides</p>
+
+        <label>Food Name</label>
+        <input type="text" placeholder="e.g. Burger, Firfir, Pizza" required>
+
+        <label>Food Description</label>
+        <textarea placeholder="Describe the food, ingredients, taste, etc." rows="4" required></textarea>
+
+        <label>Food Price</label>
+        <input type="number" placeholder="Enter price (ETB)" required>
+
+        <label>Food Category</label>
+        <select required>
+          <option>Main Dish</option>
+          <option>Fast Food</option>
+          <option>Ethiopian</option>
+          <option>Drinks</option>
+          <option>Dessert</option>
+          <option>Breakfast</option>
+        </select>
+
+        <label>Upload Food Image</label>
+        <input type="file" accept="image/*" required>
+      </div>
+      <button type="submit">
+        <a href="submit.html" style="color: white; text-decoration: none;">Submit Registration</a>
+      </button>
     </form>
+
   </main>
 
   <footer class="footer">
     <p>© 2025 beU Delivery</p>
   </footer>
+
 </body>
 </html>
