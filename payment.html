@@ -4,39 +4,165 @@
     <meta charset="UTF-8">
     <title>Payment Page</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 26px;
+            color: #333;
+        }
+
+        .payment-box {
+            max-width: 480px;
+            background: white;
+            margin: 25px auto;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+        }
+
+        .method {
+            display: flex;
+            align-items: center;
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.25s ease;
+        }
+
+        .method:hover {
+            background: #ffe9d9;
+            border-color: #ff6600;
+        }
+
+        .method input {
+            margin-right: 12px;
+            transform: scale(1.2);
+        }
+
+        .input-group {
+            margin-top: 18px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #bbb;
+            font-size: 15px;
+        }
+
+        .pay-btn {
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            background: #ff6600;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.25s ease;
+        }
+
+        .pay-btn:hover {
+            background: #e65500;
+        }
+
+        .summary-box {
+            max-width: 480px;
+            background: white;
+            margin: 15px auto;
+            padding: 18px;
+            border-radius: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .total {
+            font-weight: bold;
+            font-size: 18px;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <header class="navbar">
+
+<header class="navbar">
     <div class="logo"><a href="index.html" id="logo">beU Delivery</a></div>
-  </header>
+</header>
 
-    <h2>Choose Payment Method</h2>
+<h2>Choose Payment Method</h2>
 
-    <div class="payment-box">
-
-        <label class="method">
-            <input type="radio" name="payment" value="cbe">
-            Commercial Bank of Ethiopia (CBE)
-        </label>
-
-        <label class="method">
-            <input type="radio" name="payment" value="cbe-birr">
-            CBE Birr
-        </label>
-
-        <label class="method">
-            <input type="radio" name="payment" value="telebirr">
-            Telebirr
-        </label>
-
-
-        <div class="input-group">
-            <label>Phone Number / Wallet ID</label>
-            <input type="text" placeholder="09xxxxxxxx">
-        </div>
-
-        <button class="pay-btn">Confirm Payment</button>
+<!-- ORDER SUMMARY -->
+<div class="summary-box">
+    <div class="summary-row">
+        <span>Subtotal</span>
+        <span>390 Birr</span>
     </div>
+    <div class="summary-row">
+        <span>Delivery Fee</span>
+        <span>25 Birr</span>
+    </div>
+    <div class="summary-row total">
+        <span>Total</span>
+        <span>415 Birr</span>
+    </div>
+</div>
+
+<!-- PAYMENT OPTIONS -->
+<div class="payment-box">
+
+    <label class="method">
+        <input type="radio" name="payment" value="cbe">
+        Commercial Bank of Ethiopia (CBE)
+    </label>
+
+    <label class="method">
+        <input type="radio" name="payment" value="cbe-birr">
+        CBE Birr
+    </label>
+
+    <label class="method">
+        <input type="radio" name="payment" value="telebirr">
+        Telebirr
+    </label>
+
+    <div class="input-group">
+        <label>Phone Number / Wallet ID</label>
+        <input type="text" placeholder="09xxxxxxxx">
+    </div>
+
+    <button class="pay-btn">Confirm Payment</button>
+</div>
 
 </body>
 </html>

@@ -564,3 +564,18 @@ h2 {
         .pay-btn:hover {
             background: #e64a19;
         }
+
+
+        .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 16px;
+  }

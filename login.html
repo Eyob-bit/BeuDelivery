@@ -6,13 +6,85 @@
   <title>Login - beU Delivery</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .login{
-        text-decoration: underline;
-        font-weight: bold;
-       }
+    .login {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* Page styling */
+    .form-page {
+      max-width: 400px;
+      margin: 80px auto;
+      text-align: center;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      gap: 20px;
+    }
+
+    .tab-btn {
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      border: none;
+      background: #eee;
+      border-radius: 5px;
+    }
+
+    .active-tab {
+      background: #ff6600;
+      color: white;
+    }
+
+    .form-box {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .form-box label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 12px;
+      background: #ff6600;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .small-text {
+      text-align: center;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
+
   <header class="navbar">
     <div class="logo">beU Delivery</div>
     <nav>
@@ -27,8 +99,17 @@
   </header>
 
   <main class="form-page">
-    <h2 class="login-text">Login to Your Account</h2>
-    <form class="form-box">
+
+    <!-- TABS -->
+    <div class="tabs">
+      <button class="tab-btn active-tab" onclick="showLogin()">Login</button>
+      <button class="tab-btn" onclick="showRegister()">Sign Up</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm" class="form-box">
+      <h2>Login</h2>
+
       <label>Email or Phone</label>
       <input type="text" placeholder="example@gmail.com or 09XXXXXXXX" required>
 
@@ -36,13 +117,49 @@
       <input type="password" placeholder="Enter your password" required>
 
       <button type="submit">Login</button>
-
-      <p class="small-text">Don’t have an account? <a href="register.html">Register Here</a></p>
+      <a href="payment.html">login</a>
     </form>
+
+    <!-- REGISTER FORM -->
+    <form id="registerForm" class="form-box hide">
+      <h2>Create Account</h2>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Your full name" required>
+
+      <label>Phone Number</label>
+      <input type="text" placeholder="09XXXXXXXX" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="Create a password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
   </main>
 
   <footer class="footer">
     <p>© 2025 beU Delivery Clone</p>
   </footer>
+
+  <!-- VERY SMALL JS JUST FOR TAB SWITCHING (no backend logic) -->
+  <script>
+    function showLogin() {
+      document.getElementById("loginForm").classList.remove("hide");
+      document.getElementById("registerForm").classList.add("hide");
+
+      document.querySelectorAll(".tab-btn")[0].classList.add("active-tab");
+      document.querySelectorAll(".tab-btn")[1].classList.remove("active-tab");
+    }
+
+    function showRegister() {
+      document.getElementById("registerForm").classList.remove("hide");
+      document.getElementById("loginForm").classList.add("hide");
+
+      document.querySelectorAll(".tab-btn")[1].classList.add("active-tab");
+      document.querySelectorAll(".tab-btn")[0].classList.remove("active-tab");
+    }
+  </script>
+
 </body>
 </html>
